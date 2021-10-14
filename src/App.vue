@@ -2,13 +2,12 @@
 <div id="app" class="container">
     <h1>White App</h1>
     <div id="nav-template" class="text-center p-3 d-flex justify-content-between">
-            <router-link :to="{name: 'home'}">Home</router-link>
-            <router-link :to="{name: 'page1'}">Page 1</router-link>
-            <router-link :to="{name: 'page2'}">Page 2</router-link>
-            <router-link :to="{name: 'page3'}">Page 3</router-link>
-            <router-link :to="{name: 'page3'}">Page 4</router-link>
-            <router-link :to="{name: 'page3'}">Page 5</router-link>
-
+        <router-link :to="{name: 'home'}">Home</router-link>
+        <router-link :to="{name: 'page1'}">Count Number</router-link>
+        <router-link :to="{name: 'page2'}">Vuex State</router-link>
+        <router-link :to="{name: 'page3'}">Fetch API</router-link>
+        <router-link :to="{name: 'page4'}">V-Model</router-link>
+        <router-link :to="{name: 'page5'}">Page 5</router-link>
     </div>
     <br>
     <router-view></router-view>
@@ -28,8 +27,8 @@
     color: #2c3e50;
     margin-top: 60px;
 }
+
 #nav-template {
     background-color: rgba(61, 56, 56, 0.37);
 }
-
 </style>

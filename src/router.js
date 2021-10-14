@@ -6,6 +6,10 @@ const Home = () => import('./views/Index.vue')
 const Page1 = () => import('./views/Page1.vue')
 const Page2 = () => import('./views/Page2.vue')
 const Page3 = () => import('./views/Page3.vue')
+const Page4 = () => import('./views/Page4.vue')
+const Page5 = () => import('./views/Page5.vue')
+
+
 
 
 Vue.use(Router)
@@ -31,6 +35,16 @@ export default new Router({
             path: '/page3',
             name: 'page3',
             component: Page3
+        },
+        {
+            path: '/page4',
+            name: 'page4',
+            component: Page4
+        },
+        {
+            path: '/page5',
+            name: 'page5',
+            component: Page5
         },
     ]
 })
