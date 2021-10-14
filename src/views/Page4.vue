@@ -1,24 +1,15 @@
 <template>
 <div>
     <h1>Page4</h1>
-    {{text}}
-    <input v-model="text" type="text">
+    <text-input></text-input>
 </div>
 </template>
 
 <script>
+import TextInput from '../components/TextInput.vue'
 export default {
-    data(){
-        return {
-            text : 'text'
-        }
-    },
-    name: 'TextInput',
-    // props:{
-    //     type: String
-    // },
-
-   
+    components: {
+        TextInput,
+    }
 }
-
 </script>
