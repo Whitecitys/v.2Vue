@@ -8,6 +8,8 @@ const Page2 = () => import('./views/Page2.vue')
 const Page3 = () => import('./views/Page3.vue')
 const Page4 = () => import('./views/Page4.vue')
 const Page5 = () => import('./views/Page5.vue')
+const PageApi = () => import('./views/PageApi.vue')
+
 
 
 
@@ -45,6 +47,11 @@ export default new Router({
             path: '/page5',
             name: 'page5',
             component: Page5
+        },
+        {
+            path: '/pageapi',
+            name: 'pageapi',
+            component: PageApi
         },
     ]
 })

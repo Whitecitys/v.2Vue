@@ -4,27 +4,24 @@
     <br>
     <br>
     {{text}}
-
 </div>
 </template>
 
 <script>
 export default {
-    name: 'TextInput',
+    name: 'TextInputVmodel',
     props:{
         text:{
             type: String
-        }
+        },
     },
     data(){
         return {
-        
+            
         }
     },
     methods:{
-        onInput(e){
-            this.$emit("input",e.target.value)
-        }
+    
     },
    
 }

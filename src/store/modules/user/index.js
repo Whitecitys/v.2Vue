@@ -3,7 +3,8 @@ import * as getters from './getters'
 import * as actions from './actions'
 
 const initialState = {
-        count: 0
+        count: 0,
+        users:[]
 }
 
 export default{

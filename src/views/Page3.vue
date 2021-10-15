@@ -1,27 +1,30 @@
 <template>
-    <div>
-        <h1>Page 3</h1>
-       <div v-for="user in users" :key="user.id" style="text-align: left;">
-           <p >{{user.id}}   {{user.title}} Completed : {{user.completed}}</p>
-       </div>
-    </div>
+<div>
+    <h1>Page 3</h1>
+    <b-button @click="logmessage()">Show message Mixin</b-button>
+
+</div>
 </template>
 
 <script>
+import HelloMixin from '../mixins/HelloMixin.js'
+
 export default {
-    
-    data(){
-        return {
-            users : []
-        }
+    name: 'Page3',
+
+    mixins: [
+        HelloMixin
+    ],
+    created(){
+        this.logmessage();
     },
 
-    mounted(){
-        this.$store.dispatch('user/getUsers')
-        .then(data => {
-            this.users = data
-        })
-    }
-
+    methods: {
+        messagemixins() {
+            console.log('page 3')
+        },
+    },
+    
+    
 }
 </script>

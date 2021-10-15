@@ -6,7 +6,7 @@ import user from './modules/user'
 Vue.use(Vuex)
 
 var initState = {
-    num: 12
+    num: 12,
 }
 
 export default new Vuex.Store({

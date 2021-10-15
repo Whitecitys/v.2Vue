@@ -5,8 +5,8 @@
         <router-link :to="{name: 'home'}">Home</router-link>
         <router-link :to="{name: 'page1'}">Count Number</router-link>
         <router-link :to="{name: 'page2'}">Vuex State</router-link>
-        <router-link :to="{name: 'page3'}">Fetch API</router-link>
-        <router-link :to="{name: 'page4'}">V-Model</router-link>
+        <router-link :to="{name: 'page3'}">Mixins</router-link>
+        <router-link :to="{name: 'page4'}">Input Components</router-link>
         <router-link :to="{name: 'page5'}">Page 5</router-link>
     </div>
     <br>
